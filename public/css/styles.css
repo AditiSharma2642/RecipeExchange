@@ -1,0 +1,46 @@
+/*to set the font as rubik*/
+:root{
+    --bs-font-sans-serif: 'Rubik', sans-serif; 
+}
+
+.container-xxl{ max-width: 1530px;} /*To constraint content width to certain range */
+
+body{
+    background-image: url("/img/i-like-food.svg");
+    background-color: rgb(243,243,243);
+}
+
+
+a {color: var(--bs-dark);}
+
+/*Category card(to adjust the images(usedthrough category_link and category_img from index.js file)*/
+
+.category__Link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+}
+
+.category__Link:hover{
+    transform: scale(1.1);
+}
+
+.category__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+    overflow: hidden;/*so the image doesn't overflow*/
+    border-radius: 8px; /*for corners*/
+}
+
+.category__img--large{
+    height: 330px; 
+}
+.category__img img{
+    width: 100%;
+    object-fit: cover;
+}
